@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}The Boggle Game{% endblock %}
+
+{% block content %} 
+    <h1>Boggle Board</h1>
+    <table>
+        {% for row in bd %}
+        <tr>
+            {% for letter in row %}
+            <td>{{ letter }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+    
+    
+    <form id="word-form">
+        <label for="guess">Enter a word:</label>
+        <input class="input" type="text" id="guess" name="guess">
+        <button class="button" type="submit">Submit</button>
+    </form>
+
+    <div id="timer">You have one minute to think... CHOOSE WISELY! 60</div> <!-- Display for the countdown -->
+
+    <div>Score:<span id="score"></span></div>
+
+    <div id="result-message"></div>
+
+    <p id="message"></p>
+{% endblock %}
+
+
+
+

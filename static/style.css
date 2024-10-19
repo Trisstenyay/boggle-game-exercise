@@ -1,0 +1,73 @@
+body{
+    background-image: radial-gradient(orangered, black);
+    font-family: 'Creepster', cursive;
+}
+
+
+
+h1{
+    font-size: 2.5em; /* Increase the font size of the heading */
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+}
+
+
+
+table{
+    margin-bottom: 20px;
+    width: 30%; /* Make the table take full width */
+    border-collapse: collapse; /* Collapse borders for a cleaner look */
+}
+
+
+
+input{
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: transparent;
+    font-size: 1em; /* Increase the font size of the input text */
+    font-weight: bold; /* Increases the letters inside of the input field to bold */
+    padding: 1px; /* Add padding for spacing */
+}
+
+
+
+input:focus{
+    outline: none;
+}
+
+
+
+#timer {
+    font-size: 1.5em; /* Increase the font size of the timer */
+    text-align: center; /* Center the timer message */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+
+
+#score, #result-message, #message {
+    font-size: 1.5em; /* Increase the font size of these elements */
+    text-align: center; /* Center the text */
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+
+
+button{
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
